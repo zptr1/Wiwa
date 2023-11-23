@@ -1,0 +1,3 @@
+₁     [push an array with one sub-array]
+λ⍣⍤.  [lambda that reads a char and writes it]
+∅     [execute the lambda until the array is empty, aka infinitely]

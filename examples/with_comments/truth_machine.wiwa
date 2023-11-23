@@ -1,0 +1,9 @@
+⍣      [read a char]
+₈₆×¤   [49 (charcode of '1')]
+λ         [will be run only if the char is 49]
+  λ       [override the lambda - you don't need to do that but this might cause callstack overflow]
+    •□↪   [output 1]
+  .
+  ∅       [run the lambda 'until the array is empty', aka infinitely]
+.≍     [run the lambda if the readed character is 49 (1)]
+\□↪    [output the inputted character]
