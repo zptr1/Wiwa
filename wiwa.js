@@ -78,14 +78,14 @@ async function run(
     } else if (ch == "∈") stack.at(-2).push(stack.pop());
     else if (ch == "∋") stack.push(stack.at(-1).at(-1));
     else if (ch == "⊄") {
-      const b = stack.at(-2);
-      stack.at(-1).forEach((x, i, a) => {
+      const b = stack.at(-1);
+      stack.at(-2).forEach((x, i, a) => {
         if (b.some((y) => y.length == x.length))
           a.splice(a.indexOf(x), 1);
       });
     } else if (ch == "⊂") {
-      const b = stack.at(-2);
-      stack.at(-1).forEach((x, i, a) => {
+      const b = stack.at(-1);
+      stack.at(-2).forEach((x, i, a) => {
         if (!b.some((y) => y.length == x.length))
           a.splice(a.indexOf(x), 1);
       });
